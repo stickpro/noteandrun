@@ -32,6 +32,7 @@ const Sidebar = () => {
         <div
             ref={elementRef}
             className={`h-100 relative bg-gray-200 max-w-lg w-52 h-screen resizable`}
+            style={{ minWidth: "150px"}}
         >
             sidebar
             <div className='delimiter'></div>
