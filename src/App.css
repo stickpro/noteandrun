@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.delimiter {
+    position: absolute;
+    user-select: none;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    cursor: col-resize;
+    right: -5px;
+}
