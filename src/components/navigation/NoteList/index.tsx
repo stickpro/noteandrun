@@ -1,6 +1,6 @@
-import { useRef, useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-const Sidebar = () => {
+const NoteList = () => {
     const elementRef = useRef<HTMLDivElement>(null);
     const [isResizing, setIsResizing] = useState(false);
 
@@ -27,18 +27,16 @@ const Sidebar = () => {
             window.removeEventListener('mouseup', onMouseUp);
         };
     }, [isResizing]);
-
     return (
         <div
             ref={elementRef}
-            className={`h-100 relative select-none cursor-default bg-gray-400 max-w-lg w-52 h-screen resizable`}
+            className={`h-100 relative select-none focus:cursor-col-resize bg-gray-200 max-w-lg w-52 h-screen resizable`}
             style={{ minWidth: "150px"}}
         >
-            <span> text </span>
+            <span> alongasdasdas </span>
             <div className='delimiter'></div>
         </div>
+    )
+}
 
-    );
-};
-
-export default Sidebar;
+export default NoteList
